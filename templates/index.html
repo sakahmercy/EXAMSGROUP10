@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fashion-MNIST Image Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image for Classification</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <br><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>
